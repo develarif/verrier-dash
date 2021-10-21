@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet - Verrier Technology Dashboard</title>
+
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./lib/animate.min.css" />
+    <!-- Slider Style CSS -->
+    <link rel="stylesheet" href="./lib/splide.min.css" />
+    <!-- Styleseets Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./inc/custom.style.css" />
+
+</head>
+
+<body class="dark:bg-body-black">
+    <div class="w-full min-h-screen">
+        <div class="max-w-full mx-auto">
+            <div class="flex">
+
+                <!-- Header Area -->
+                <header
+                    class="menu-bar text-gray-400 dark:text-gray-200 bg-site-blue dark:bg-dark-black min-h-screen w-0 hidden lg:w-64 lg:max-w-6xl lg:block flex-shrink-0">
+                    <div class="menu-content">
+                        <div class="logo h-20 flex justify-center items-center mb-8 animate__animated animate__fadeIn">
+                            <a class="" href="index.html">
+                                <img class="block text-center mx-auto w-40" src="media/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <nav class="menu-items animate__animated animate__fadeIn">
+                            <ul class="list-none">
+                                <li>
+                                    <a class="flex align-middle active" href="index.html">
+                                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.11111 11.1111H7.77778C8.38889 11.1111 8.88889 10.6111 8.88889 10V1.11111C8.88889 0.5 8.38889 0 7.77778 0H1.11111C0.5 0 0 0.5 0 1.11111V10C0 10.6111 0.5 11.1111 1.11111 11.1111ZM1.11111 20H7.77778C8.38889 20 8.88889 19.5 8.88889 18.8889V14.4444C8.88889 13.8333 8.38889 13.3333 7.77778 13.3333H1.11111C0.5 13.3333 0 13.8333 0 14.4444V18.8889C0 19.5 0.5 20 1.11111 20ZM12.2222 20H18.8889C19.5 20 20 19.5 20 18.8889V10C20 9.38889 19.5 8.88889 18.8889 8.88889H12.2222C11.6111 8.88889 11.1111 9.38889 11.1111 10V18.8889C11.1111 19.5 11.6111 20 12.2222 20ZM11.1111 1.11111V5.55556C11.1111 6.16667 11.6111 6.66667 12.2222 6.66667H18.8889C19.5 6.66667 20 6.16667 20 5.55556V1.11111C20 0.5 19.5 0 18.8889 0H12.2222C11.6111 0 11.1111 0.5 11.1111 1.11111Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="website.html">
+                                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.8165 7.01773C11.2578 7.01773 8.73851 7.01773 6.22384 7.01773C5.93051 7.82752 5.92184 11.3384 6.21184 12.3096C8.73451 12.3096 11.2625 12.3096 13.8152 12.3096C14.0638 10.5472 14.0598 8.7994 13.8165 7.01773Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M13.5863 13.6681C11.1762 13.6681 8.80492 13.6681 6.40625 13.6681C6.79625 15.2691 7.26758 16.8083 8.37158 18.0612C9.44292 19.2769 10.5643 19.2689 11.6403 18.0472C12.5569 17.0069 13.0269 15.7461 13.3956 14.4387C13.4643 14.1949 13.5176 13.9471 13.5863 13.6681Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M6.41016 5.66519C8.81882 5.66519 11.1915 5.66519 13.5908 5.66519C13.2015 4.06554 12.7295 2.52635 11.6275 1.2728C10.5635 0.0631042 9.45015 0.0631046 8.38149 1.25885C7.44882 2.30181 6.97549 3.57329 6.60282 4.89128C6.53349 5.13508 6.48016 5.38286 6.41016 5.66519Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M19.6343 7.02571C18.1503 7.02571 16.6803 7.02571 15.169 7.02571C15.3863 8.79144 15.3863 10.5392 15.167 12.3236C15.4403 12.3236 15.6703 12.3236 15.901 12.3236C17.0543 12.3236 18.2083 12.3236 19.3617 12.3229C19.5023 12.3229 19.633 12.3495 19.6856 12.1409C20.1163 10.4343 20.1096 8.7363 19.6343 7.02571Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M4.83046 7.02638C3.32446 7.02638 1.86113 7.02638 0.399129 7.02638C-0.0668709 8.21084 -0.184204 10.5299 0.369796 12.3023C1.83446 12.3023 3.30713 12.3023 4.82646 12.3023C4.61446 10.5432 4.60979 8.7941 4.83046 7.02638Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M12.3184 19.328C15.4717 18.5215 17.7344 16.6449 19.157 13.6734C17.7324 13.6734 16.3637 13.6734 14.9604 13.6734C14.493 15.7341 13.849 17.731 12.3184 19.328Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M12.2852 0.0119557C13.8292 1.59832 14.4958 3.57331 14.9598 5.66122C16.3372 5.66122 17.7105 5.66122 19.0838 5.66122C18.8218 3.63774 14.7858 0.267049 12.2852 0.0119557Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M7.68646 -1.14441e-05C4.52846 0.810443 2.2658 2.68445 0.841797 5.65457C2.27046 5.65457 3.64646 5.65457 5.04046 5.65457C5.50313 3.57795 6.1598 1.58968 7.68646 -1.14441e-05Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M5.03586 13.6648C3.6432 13.6648 2.27186 13.6648 0.894531 13.6648C1.80853 16.1447 4.5932 18.7062 7.7232 19.3333C6.1692 17.735 5.50253 15.7647 5.03586 13.6648Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Websites</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="domains.html">
+                                        <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 0H16.4844V3.51562H20V0Z" fill="#898FA0" />
+                                            <path d="M15.3125 0H0V3.51562H15.3125V0Z" fill="#898FA0" />
+                                            <path
+                                                d="M9.21973 11.7578C9.30617 13.5269 9.76961 14.5301 9.99988 14.7105C10.2302 14.5301 10.6936 13.5269 10.78 11.7578H9.21973Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M8.46887 14.2836C8.23598 13.585 8.09039 12.704 8.04762 11.7578H6.49414C6.68961 12.9312 7.46168 13.9119 8.50844 14.3979C8.49512 14.3607 8.48191 14.3227 8.46887 14.2836Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M9.99988 7.63327C9.76961 7.81362 9.30617 8.81682 9.21973 10.5859H10.78C10.6936 8.81682 10.2302 7.81362 9.99988 7.63327Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M6.49414 10.5859H8.04762C8.09035 9.63969 8.23598 8.75875 8.46887 8.06012C8.48188 8.02106 8.49508 7.98309 8.50844 7.94586C7.46168 8.43184 6.68957 9.41254 6.49414 10.5859Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M11.4922 7.94586C11.5055 7.98309 11.5187 8.02106 11.5318 8.06012C11.7646 8.75875 11.9103 9.63969 11.953 10.5859H13.5065C13.311 9.41254 12.5389 8.43184 11.4922 7.94586Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M0 4.6875V17.6562H20V4.6875H0ZM10 15.8984C7.39375 15.8984 5.27344 13.7781 5.27344 11.1719C5.27344 8.56562 7.39375 6.44531 10 6.44531C12.6062 6.44531 14.7266 8.56562 14.7266 11.1719C14.7266 13.7781 12.6062 15.8984 10 15.8984Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M11.953 11.7578C11.9102 12.7041 11.7646 13.585 11.5318 14.2836C11.5188 14.3227 11.5055 14.3607 11.4922 14.3979C12.5389 13.9119 13.311 12.9312 13.5065 11.7578H11.953Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Domains</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="hosting.html">
+                                        <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.13366 11.4412C9.13366 10.8613 9.13366 10.3363 9.13366 9.765C8.98935 9.765 8.86158 9.765 8.73316 9.765C6.7697 9.76566 4.80558 9.76831 2.84212 9.76698C1.11566 9.76566 0.00219079 8.65418 0.0015288 6.93434C0.00020482 5.53291 -0.00111916 4.13148 0.0015288 2.73071C0.00483874 1.16114 1.14545 0.00530479 2.71039 0.00331883C7.56475 -0.00131509 12.4191 -0.00131509 17.2735 0.00265684C18.8563 0.00398081 19.9962 1.15849 19.9989 2.74858C20.0015 4.18311 20.0009 5.61698 19.9989 7.05151C19.9969 8.60586 18.8378 9.76169 17.2735 9.76434C15.2769 9.76765 13.2797 9.765 11.2831 9.765C11.1534 9.765 11.0236 9.765 10.872 9.765C10.872 10.3323 10.872 10.8659 10.872 11.4445C11.0044 11.4445 11.1223 11.4445 11.2394 11.4445C12.5853 11.4445 13.9311 11.4431 15.2776 11.4451C16.7949 11.4471 17.8209 12.4639 17.7885 13.9825C17.7786 14.4472 17.8792 14.7041 18.33 14.9444C19.5196 15.5779 20.0585 16.9145 19.742 18.1822C19.4316 19.4261 18.3843 20.2727 17.057 20.3535C15.7145 20.4349 14.4514 19.4731 14.1443 18.1345C13.8245 16.7417 14.5103 15.3131 15.7741 14.8021C16.0409 14.6942 16.1335 14.5598 16.1018 14.2937C16.0872 14.1738 16.1011 14.0514 16.0991 13.9296C16.0898 13.4311 15.8158 13.1531 15.316 13.1524C13.6392 13.1497 11.9623 13.1517 10.2855 13.1517C8.43195 13.1517 6.57839 13.1504 4.72548 13.1517C4.13499 13.1524 3.90726 13.3808 3.90197 13.9686C3.90197 14.0017 3.90594 14.0355 3.9013 14.0679C3.84305 14.4664 3.96221 14.6968 4.36668 14.9014C5.55892 15.5051 6.14214 16.8251 5.86741 18.1027C5.5993 19.3506 4.54211 20.2449 3.20953 20.3509C1.87694 20.4568 0.594009 19.5128 0.259042 18.1809C-0.0865157 16.8046 0.580769 15.3423 1.83391 14.8193C2.13843 14.6922 2.22316 14.5386 2.20463 14.2367C2.16954 13.6687 2.22647 13.11 2.53695 12.6109C3.01953 11.835 3.7325 11.4537 4.63611 11.4458C6.00378 11.4339 7.37211 11.4412 8.74044 11.4405C8.85827 11.4412 8.97743 11.4412 9.13366 11.4412ZM4.81882 4.07984C4.37727 4.07984 3.93639 4.07322 3.49484 4.08183C2.97452 4.0911 2.66206 4.37972 2.6422 4.85371C2.62036 5.36543 2.91693 5.7421 3.43791 5.75865C4.34153 5.78777 5.24713 5.78844 6.15074 5.76063C6.64061 5.74541 6.96499 5.3449 6.9491 4.8782C6.93255 4.39561 6.60553 4.09176 6.0766 4.08183C5.65756 4.07389 5.23786 4.07984 4.81882 4.07984ZM15.3054 4.08117C15.3054 4.08051 15.3054 4.08051 15.3054 4.07984C14.8863 4.07984 14.4666 4.07984 14.0476 4.07984C14.0258 4.07984 14.0033 4.07984 13.9814 4.08051C13.4783 4.10169 13.1592 4.40091 13.1374 4.87291C13.1162 5.32769 13.43 5.73812 13.8973 5.75335C14.8228 5.78446 15.7502 5.78645 16.6757 5.75666C17.1636 5.74077 17.482 5.32637 17.4529 4.85834C17.4237 4.38634 17.1027 4.08977 16.5963 4.08117C16.166 4.07521 15.7357 4.08117 15.3054 4.08117ZM8.73779 4.9113C8.73647 5.59514 9.31041 6.18894 9.98101 6.19821C10.6648 6.20747 11.2606 5.60904 11.2606 4.91329C11.2613 4.24269 10.6635 3.64823 9.9916 3.64955C9.29386 3.65154 8.73912 4.21026 8.73779 4.9113Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Hosting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="emails.html">
+                                        <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.5281 0.75C15.7573 0.75 16.9398 1.23583 17.8097 2.10758C18.6806 2.9775 19.1673 4.15083 19.1673 5.37917V12.6208C19.1673 15.1783 17.0865 17.25 14.5281 17.25H5.47232C2.9139 17.25 0.833984 15.1783 0.833984 12.6208V5.37917C0.833984 2.82167 2.90473 0.75 5.47232 0.75H14.5281ZM15.9865 6.745L16.0598 6.67167C16.2789 6.40583 16.2789 6.02083 16.0497 5.755C15.9223 5.61842 15.7472 5.535 15.5648 5.51667C15.3723 5.50658 15.189 5.57167 15.0506 5.7L10.9173 9C10.3857 9.44092 9.6239 9.44092 9.08399 9L4.95899 5.7C4.6739 5.48917 4.27974 5.51667 4.04232 5.76417C3.79482 6.01167 3.76732 6.40583 3.97724 6.68083L4.09732 6.8L8.26815 10.0542C8.78149 10.4575 9.4039 10.6775 10.0557 10.6775C10.7056 10.6775 11.339 10.4575 11.8514 10.0542L15.9865 6.745Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Emails</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="billing.html">
+                                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.9024 17.5596C15.0617 18.2798 14.2516 18.9733 13.4409 19.6662C12.9429 20.092 12.5109 20.0954 12.0156 19.6723C11.1974 18.9733 10.3805 18.2716 9.54731 17.5569C8.70591 18.2764 7.87746 18.9808 7.0531 19.6914C6.80852 19.9019 6.54418 20.0252 6.21443 19.9666C5.82201 19.8972 5.5529 19.6512 5.49226 19.2574C5.45479 19.0128 5.45275 18.7608 5.45275 18.5114C5.45547 13.506 5.48068 8.50118 5.45275 3.49573C5.44525 2.08613 4.68834 1.06283 3.44839 0.401297C3.34074 0.344069 3.22833 0.295697 3.11796 0.243237C3.1166 0.204404 3.11592 0.164889 3.11523 0.126055C3.37072 0.0844962 3.6262 0.00751023 3.88169 0.00682894C7.62743 -0.000665277 11.3725 -0.00202786 15.1182 0.00478506C15.775 0.00614764 16.4468 -0.0292795 17.0851 0.0926718C18.8612 0.432637 19.9976 1.9124 19.999 3.80026C20.0024 8.68036 19.9983 13.5611 19.997 18.4412C19.997 18.679 20.0126 18.9202 19.9833 19.1552C19.8866 19.9278 19.0895 20.2548 18.4872 19.7589C17.7344 19.1382 17.002 18.493 16.2601 17.8587C16.1483 17.7627 16.0346 17.67 15.9024 17.5596ZM12.718 12.7225C12.718 12.7218 12.718 12.7218 12.718 12.7211C13.6037 12.7211 14.4887 12.7238 15.3744 12.7204C15.9433 12.7184 16.335 12.3634 16.3486 11.8477C16.363 11.3129 15.9862 10.913 15.4044 10.9089C13.6221 10.8966 11.8399 10.8973 10.0583 10.9082C9.46828 10.9116 9.09016 11.2999 9.10106 11.8341C9.11196 12.3648 9.50507 12.7197 10.0957 12.7218C10.9705 12.7245 11.8439 12.7225 12.718 12.7225ZM12.7262 7.27213C11.8521 7.27213 10.978 7.27008 10.1039 7.27281C9.50916 7.27485 9.11605 7.62299 9.10174 8.15304C9.08676 8.69944 9.47441 9.08505 10.0855 9.08777C11.8446 9.09595 13.6044 9.09527 15.3642 9.08777C15.9576 9.08573 16.348 8.71647 16.3514 8.18915C16.3548 7.64752 15.9501 7.27417 15.3485 7.27213C14.4737 7.27008 13.6003 7.27213 12.7262 7.27213ZM12.6901 5.45172C13.5526 5.45172 14.4145 5.4558 15.277 5.44831C15.4555 5.44695 15.6449 5.43196 15.8097 5.36996C16.1947 5.22553 16.4011 4.82356 16.3398 4.40457C16.2792 3.99034 15.9426 3.66469 15.4998 3.6531C14.7517 3.63335 14.0023 3.64357 13.2535 3.64289C12.1873 3.6422 11.1204 3.63539 10.0542 3.64629C9.41855 3.6531 9.01931 4.11775 9.11469 4.70706C9.18691 5.15535 9.54663 5.4449 10.0699 5.44899C10.9433 5.45649 11.8167 5.45103 12.6901 5.45172Z"
+                                                fill="#898FA0" />
+                                            <path
+                                                d="M3.64549 7.01661C3.64549 8.19729 3.63867 9.37796 3.65026 10.5586C3.65298 10.8203 3.58349 10.9156 3.30757 10.9095C2.54725 10.8925 1.78624 10.9116 1.02592 10.9027C0.358937 10.8952 0.0101152 10.558 0.00807136 9.89507C-0.000104144 7.73742 -0.00555448 5.58045 0.00943394 3.42416C0.0162469 2.40358 0.850829 1.61465 1.85165 1.63168C2.87018 1.64871 3.65503 2.46899 3.65298 3.50864C3.65094 4.67773 3.6523 5.84683 3.6523 7.01593C3.65026 7.01661 3.64753 7.01661 3.64549 7.01661Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Billing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-middle" href="wallet.html">
+                                        <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.13366 11.4412C9.13366 10.8613 9.13366 10.3363 9.13366 9.765C8.98935 9.765 8.86158 9.765 8.73316 9.765C6.7697 9.76566 4.80558 9.76831 2.84212 9.76698C1.11566 9.76566 0.00219079 8.65418 0.0015288 6.93434C0.00020482 5.53291 -0.00111916 4.13148 0.0015288 2.73071C0.00483874 1.16114 1.14545 0.00530479 2.71039 0.00331883C7.56475 -0.00131509 12.4191 -0.00131509 17.2735 0.00265684C18.8563 0.00398081 19.9962 1.15849 19.9989 2.74858C20.0015 4.18311 20.0009 5.61698 19.9989 7.05151C19.9969 8.60586 18.8378 9.76169 17.2735 9.76434C15.2769 9.76765 13.2797 9.765 11.2831 9.765C11.1534 9.765 11.0236 9.765 10.872 9.765C10.872 10.3323 10.872 10.8659 10.872 11.4445C11.0044 11.4445 11.1223 11.4445 11.2394 11.4445C12.5853 11.4445 13.9311 11.4431 15.2776 11.4451C16.7949 11.4471 17.8209 12.4639 17.7885 13.9825C17.7786 14.4472 17.8792 14.7041 18.33 14.9444C19.5196 15.5779 20.0585 16.9145 19.742 18.1822C19.4316 19.4261 18.3843 20.2727 17.057 20.3535C15.7145 20.4349 14.4514 19.4731 14.1443 18.1345C13.8245 16.7417 14.5103 15.3131 15.7741 14.8021C16.0409 14.6942 16.1335 14.5598 16.1018 14.2937C16.0872 14.1738 16.1011 14.0514 16.0991 13.9296C16.0898 13.4311 15.8158 13.1531 15.316 13.1524C13.6392 13.1497 11.9623 13.1517 10.2855 13.1517C8.43195 13.1517 6.57839 13.1504 4.72548 13.1517C4.13499 13.1524 3.90726 13.3808 3.90197 13.9686C3.90197 14.0017 3.90594 14.0355 3.9013 14.0679C3.84305 14.4664 3.96221 14.6968 4.36668 14.9014C5.55892 15.5051 6.14214 16.8251 5.86741 18.1027C5.5993 19.3506 4.54211 20.2449 3.20953 20.3509C1.87694 20.4568 0.594009 19.5128 0.259042 18.1809C-0.0865157 16.8046 0.580769 15.3423 1.83391 14.8193C2.13843 14.6922 2.22316 14.5386 2.20463 14.2367C2.16954 13.6687 2.22647 13.11 2.53695 12.6109C3.01953 11.835 3.7325 11.4537 4.63611 11.4458C6.00378 11.4339 7.37211 11.4412 8.74044 11.4405C8.85827 11.4412 8.97743 11.4412 9.13366 11.4412ZM4.81882 4.07984C4.37727 4.07984 3.93639 4.07322 3.49484 4.08183C2.97452 4.0911 2.66206 4.37972 2.6422 4.85371C2.62036 5.36543 2.91693 5.7421 3.43791 5.75865C4.34153 5.78777 5.24713 5.78844 6.15074 5.76063C6.64061 5.74541 6.96499 5.3449 6.9491 4.8782C6.93255 4.39561 6.60553 4.09176 6.0766 4.08183C5.65756 4.07389 5.23786 4.07984 4.81882 4.07984ZM15.3054 4.08117C15.3054 4.08051 15.3054 4.08051 15.3054 4.07984C14.8863 4.07984 14.4666 4.07984 14.0476 4.07984C14.0258 4.07984 14.0033 4.07984 13.9814 4.08051C13.4783 4.10169 13.1592 4.40091 13.1374 4.87291C13.1162 5.32769 13.43 5.73812 13.8973 5.75335C14.8228 5.78446 15.7502 5.78645 16.6757 5.75666C17.1636 5.74077 17.482 5.32637 17.4529 4.85834C17.4237 4.38634 17.1027 4.08977 16.5963 4.08117C16.166 4.07521 15.7357 4.08117 15.3054 4.08117ZM8.73779 4.9113C8.73647 5.59514 9.31041 6.18894 9.98101 6.19821C10.6648 6.20747 11.2606 5.60904 11.2606 4.91329C11.2613 4.24269 10.6635 3.64823 9.9916 3.64955C9.29386 3.65154 8.73912 4.21026 8.73779 4.9113Z"
+                                                fill="#898FA0" />
+                                        </svg>
+                                        <span>Wallet</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- Main Content Area -->
+                <main class="content w-full max-w-full overflow-x-hidden">
+                    <div class="content-box">
+                        <div class="top-bar bg-site-blue lg:bg-white dark:bg-dark-black px-6 lg:px-12 h-20">
+
+                            <!-- Desktop Menu Bar -->
+                            <div class="top-bar-content hidden lg:flex justify-between items-center h-full">
+
+                                <!-- Page Title -->
+                                <div class="w-full title animate__animated animate__fadeIn">
+                                    <h2 class="font-bold text-3xl dark:text-gray-200">Dashboard</h2>
+                                </div>
+
+                                <!-- Time Zone -->
+                                <div class="w-full time animate__animated animate__fadeIn text-center">
+                                    <h2 class="font-bold text-2xl dark:text-gray-200">18:00:00</h2>
+                                    <p class="text-sm text-gray-500">British time-UK GMT+1</p>
+                                </div>
+
+                                <!-- Notifiacation Icon -->
+                                <div class="w-full notify relative animate__animated animate__fadeIn">
+                                    <div class="icon relative">
+                                        <div
+                                            class="noti-count absolute top-0 right-0 text-center bg-red w-4 h-4 rounded-full text-white text-xs -mt-2">
+                                            1
+                                        </div>
+                                        <img class="w-4 ml-auto" src="media/notify.svg" alt="">
+                                    </div>
+                                    <div class="absolute top-5 right-0 w-52 notification-messeage hidden">
+                                        <div class="bg-gray text-white">
+                                            <ul class="w-full list-none p-3">
+                                                <li>
+                                                    <a href="#">There is a new notificatio</a>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Menu Bar -->
+                            <div class="block lg:hidden h-full mobile-menu">
+                                <div class="mobile-menu-bar h-full flex items-center justify-between">
+
+                                    <!-- Mobile Menu Logo -->
+                                    <div class="mobile-logo">
+                                        <a href="#">
+                                            <img class="w-36" src="media/logo.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <!-- Menu Open Button -->
+                                    <a href="#open" class="w-10" id="open-menu-btn">
+                                        <img class="w-9" src="media/menu-bar.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="content-bar w-full">
+                            <div class="content mx-4 sm:mx-6 lg:mx-12 my-8">
+                                <div class="flex flex-col-reverse xl:flex-row justify-between">
+
+                                    <!-- Content Left Area -->
+                                    <div class="body-content w-full xl:w-3/4 mr-8">
+
+
+                                        <!-- Tab Indicatior  -->
+                                        <div
+                                            class="flex flex-col sm:flex-row justify-between bg-white dark:bg-dark-black rounded-2xl px-8 py-4 mb-8">
+                                            <ul class="flex items-center text-black dark:text-gray-200">
+                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Wallet</li>
+                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Send</li>
+                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Receive</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab-heading">
+                                            <div class="my-6">
+                                                <h3 class="text-3xl font-semibold text-black dark:text-gray-200">Hello,
+                                                    this your wallet.</h3>
+                                                <p class="text-gray-500 text-base">Here is a summary of your wallet</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Tab Content -->
+                                        <div class="body-content grid grid-cols-1 md:grid-cols-3 gap-8 justify-between">
+
+                                            <!-- Balance Info -->
+                                            <div
+                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                    <p class="text-gray-500 text-base">Balance</p>
+                                                    <div class="my-4">
+                                                        <h3
+                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                            200,00 <span>Ver</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Balance Info -->
+                                            <div
+                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                    <p class="text-gray-500 text-base">Unconfirmed</p>
+                                                    <div class="my-4">
+                                                        <h3
+                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                            200,00 <span>Ver</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Balance Info -->
+                                            <div
+                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                    <p class="text-gray-500 text-base">Transaction</p>
+                                                    <div class="my-4">
+                                                        <h3
+                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                            200</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Chart Area -->
+                                        <div class="chart-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
+                                            <div class="chart-container">
+                                                <canvas id="myChart" class="w-full"></canvas>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Content Right Area -->
+                                    <div
+                                        class="flex-shrink-0 profile w-full xl:w-1/4 bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl mb-8 xl:mb-0">
+
+                                        <!-- Profile Info -->
+                                        <div
+                                            class="profile-info xl:text-center flex flex-wrap xl:block animate__animated animate__fadeIn">
+                                            <img class="w-20 h-20 rounded-full xl:mx-auto mb-4 sm:mb-0 mr-8 sm:mr-0"
+                                                src="./media/profile.png" alt="pp">
+                                            <div
+                                                class="info text-black dark:text-gray-200 xl:mt-5 ml-0 sm:ml-8 xl:ml-0">
+                                                <h3 class="font-medium text-2xl">Alex Washington</h3>
+                                                <a class="mt-1.5 text-sm block"
+                                                    href="mailto:alexwash24@mail.com">alexwash24@mail.com</a>
+                                                <p class="mt-1.5 text-sm">Support Pin: 1234</p>
+                                                <a class="inline-block text-white bg-green px-6 py-2.5 mt-6 rounded-full font-light text-base"
+                                                    href="#">Edit Profile</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Works Area under the profile -->
+                                        <div class="profile-works mt-11 animate__animated animate__fadeIn">
+                                            <a class="flex items-center rounded-full mb-8 py-2.5 px-6 border-solid border-2 border-gray-200 dark:border-gray-400"
+                                                href="#">
+                                                <img class="w-8 h-8 mr-6" src="media/chat.png" alt="">
+                                                <h3 class="text-black dark:text-gray-200 text-base font-light truncate">
+                                                    Support</h3>
+                                            </a>
+                                            <a class="flex items-center rounded-full mb-8 py-2.5 px-6 border-solid border-2 border-gray-200 dark:border-gray-400"
+                                                href="#">
+                                                <img class="w-8 h-8 mr-6" src="media/tree.svg" alt="">
+                                                <h3 class="text-black dark:text-gray-200 text-base font-light truncate">
+                                                    You have planted 125 trees</h3>
+                                            </a>
+                                            <a class="flex items-center rounded-full py-2.5 px-6 border-solid border-2 border-gray-200 dark:border-gray-400"
+                                                href="#">
+                                                <img class="w-8 h-8 mr-6" src="media/refer-friend.svg" alt="">
+                                                <h3 class="text-black dark:text-gray-200 text-base font-light truncate">
+                                                    Refer a friend & receive VER.</h3>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Deposit History -->
+                        <div class="deposite-history w-full">
+                            <div class="mx-4 sm:mx-6 lg:mx-12 mb-16">
+                                <div
+                                    class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-6 xl:mb-0 lg:p-8 rounded-2xl animate__animated animate__fadeIn">
+
+                                    <h2 class="font-semibold text-xl mb-3">Verrier Post</h2>
+                                    <div class="table-scroll">
+                                        <div class="depo-history-table">
+
+                                            <!-- Table Header -->
+                                            <div
+                                                class="table-header border-b-2 py-2.5 border-gray-200 dark:border-gray-400">
+                                                <ul class="grid grid-cols-5 text-left">
+                                                    <li class="text-sm text-gray-500 font-normal">Status</li>
+                                                    <li class="text-sm text-gray-500 font-normal">Coin</li>
+                                                    <li class="text-sm text-gray-500 font-normal">Amount</li>
+                                                    <li class="text-sm text-gray-500 font-normal">Date</li>
+                                                    <li class="text-sm text-gray-500 font-normal">Info</li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Table Content -->
+                                            <div class="table-content mb-4">
+                                                <!-- table content line -->
+                                                <ul
+                                                    class="grid grid-cols-5 text-black dark:text-gray-200 text-base text-left border-gray-200 dark:border-gray-400 border-b-2 py-2.5">
+                                                    <li>Approved</li>
+                                                    <li>22</li>
+                                                    <li>$1023</li>
+                                                    <li>26-10-21</li>
+                                                    <li>Will be deliver soon</li>
+                                                </ul>
+                                                <!-- table content line -->
+                                                <ul
+                                                    class="grid grid-cols-5 text-black dark:text-gray-200 text-base text-left border-gray-200 dark:border-gray-400 border-b-2 py-2.5">
+                                                    <li>Approved</li>
+                                                    <li>22</li>
+                                                    <li>$1023</li>
+                                                    <li>26-10-21</li>
+                                                    <li>Will be deliver soon</li>
+                                                </ul>
+                                                <!-- table content line -->
+                                                <ul
+                                                    class="grid grid-cols-5 text-black dark:text-gray-200 text-base text-left border-gray-200 dark:border-gray-400 border-b-2 py-2.5">
+                                                    <li>Approved</li>
+                                                    <li>22</li>
+                                                    <li>$1023</li>
+                                                    <li>26-10-21</li>
+                                                    <li>Will be deliver soon</li>
+                                                </ul>
+                                                <!-- table content line -->
+                                                <ul
+                                                    class="grid grid-cols-5 text-black dark:text-gray-200 text-base text-left border-gray-200 dark:border-gray-400 border-b-2 py-2.5">
+                                                    <li>Approved</li>
+                                                    <li>22</li>
+                                                    <li>$1023</li>
+                                                    <li>26-10-21</li>
+                                                    <li>Will be deliver soon</li>
+                                                </ul>
+                                                <!-- table content line -->
+                                                <ul
+                                                    class="grid grid-cols-5 text-black dark:text-gray-200 text-base text-left border-gray-200 dark:border-gray-400 border-b-2 py-2.5">
+                                                    <li>Approved</li>
+                                                    <li>22</li>
+                                                    <li>$1023</li>
+                                                    <li>26-10-21</li>
+                                                    <li>Will be deliver soon</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End of Content Box -->
+                    </div>
+
+                    <!-- Dark Mode Button -->
+                    <div
+                        class="dark-mode fixed flex justify-center items-center right-8 bottom-8 md:right-16 md:bottom-16 w-16 h-16 rounded-full bg-site-blue dark:bg-green z-30">
+                        <div class="dark-btn cursor-pointer">
+                            <input class="hidden" type="checkbox" id="dark-mode-input">
+                            <label for="dark-mode-input" class="cursor-pointer">
+                                <div class="p-1 bg-green dark:bg-white rounded-full w-12 h-6">
+                                    <div
+                                        class="dark-mode-btn w-4 h-4 rounded-full bg-white dark:bg-deep-black transform duration-300 ease-in-out">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- End of Main Content -->
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark Btn Script -->
+    <script src="./inc/js/darkbtn.js"></script>
+    <!-- Mobile Menu Script -->
+    <script src="./inc/js/moile-menu.js"></script>
+    <!-- Chart script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./inc/js/chart.script.js"></script>
+</body>
+
+</html>
