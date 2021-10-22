@@ -228,68 +228,177 @@
                                         <!-- Tab Indicatior  -->
                                         <div
                                             class="flex flex-col sm:flex-row justify-between bg-white dark:bg-dark-black rounded-2xl px-8 py-4 mb-8">
-                                            <ul class="flex items-center text-black dark:text-gray-200">
-                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Wallet</li>
-                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Send</li>
-                                                <li class="wallet-tab-item cursor-pointer px-2.5 mr-4">Receive</li>
+                                            <ul id="wallet-tab-header" class="flex items-center text-black dark:text-gray-200">
+                                                <li class="wallet-tab-item cursor-pointer px-1.5 md:px-2.5 mr-2 md:mr-4 active">Wallet</li>
+                                                <li class="wallet-tab-item cursor-pointer px-1.5 md:px-2.5 mr-2 md:mr-4">Send</li>
+                                                <li class="wallet-tab-item cursor-pointer px-1.5 md:px-2.5 mr-2 md:mr-4">Receive</li>
                                             </ul>
                                         </div>
 
-                                        <div class="tab-heading">
-                                            <div class="my-6">
-                                                <h3 class="text-3xl font-semibold text-black dark:text-gray-200">Hello,
-                                                    this your wallet.</h3>
-                                                <p class="text-gray-500 text-base">Here is a summary of your wallet</p>
-                                            </div>
-                                        </div>
+                                        <!-- Tab Body -->
+                                        <div class="tab-body" id="wallet-tab-body">
 
-                                        <!-- Tab Content -->
-                                        <div class="body-content grid grid-cols-1 md:grid-cols-3 gap-8 justify-between">
-
-                                            <!-- Balance Info -->
-                                            <div
-                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
-                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
-                                                    <p class="text-gray-500 text-base">Balance</p>
-                                                    <div class="my-4">
-                                                        <h3
-                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
-                                                            200,00 <span>Ver</span></h3>
+                                            <!-- Wallet Tab Content -->
+                                            <div class="tab-item active">
+                                                <div class="tab-heading">
+                                                    <div class="my-6">
+                                                        <h3 class="text-3xl font-semibold text-black dark:text-gray-200">Hello,
+                                                            this your wallet.</h3>
+                                                        <p class="text-gray-500 text-base">Here is a summary of your wallet</p>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Tab Content -->
+                                                <div class="tab-content grid grid-cols-1 md:grid-cols-3 gap-8 justify-between">
+        
+                                                    <!-- Balance Info -->
+                                                    <div
+                                                        class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                        <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                            <p class="text-gray-500 text-base">Balance</p>
+                                                            <div class="my-4">
+                                                                <h3
+                                                                    class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                                    200,00 <span>Ver</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <!-- Balance Info -->
+                                                    <div
+                                                        class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                        <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                            <p class="text-gray-500 text-base">Unconfirmed</p>
+                                                            <div class="my-4">
+                                                                <h3
+                                                                    class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                                    200,00 <span>Ver</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <!-- Balance Info -->
+                                                    <div
+                                                        class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                        <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                            <p class="text-gray-500 text-base">Transaction</p>
+                                                            <div class="my-4">
+                                                                <h3
+                                                                    class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                                    200</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Chart Area -->
+                                                <div class="chart-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
+                                                    <div class="chart-container">
+                                                        <canvas id="myChart" class="w-full"></canvas>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Balance Info -->
-                                            <div
-                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
-                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
-                                                    <p class="text-gray-500 text-base">Unconfirmed</p>
-                                                    <div class="my-4">
-                                                        <h3
-                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
-                                                            200,00 <span>Ver</span></h3>
+                                            <!-- Send Money Tab content -->
+                                            <div class="tab-item">
+                                                <div class="tab-heading">
+                                                    <div class="my-6">
+                                                        <h3 class="text-3xl font-semibold text-black dark:text-gray-200">Hello,
+                                                            Send your money</h3>
+                                                        <p class="text-gray-500 text-base">Send money to another VER wallet</p>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Tab Content -->
+                                                <div class="tab-content">
+                                                    <!-- Balance Info -->
+                                                    <div
+                                                        class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
+                                                        <div class="info-right-bar-content animate__animated animate__fadeIn">
+                                                            <p class="text-gray-500 text-base">Balance</p>
+                                                            <div class="my-4">
+                                                                <h3
+                                                                    class="text-3xl font-semibold text-black dark:text-gray-200">
+                                                                    200,00 <span>Ver</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Recipent address -->
+                                                <div class="recipent-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
+                                                    <div class="recipent-container">
+                                                        hi
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Balance Info -->
-                                            <div
-                                                class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
-                                                <div class="info-right-bar-content animate__animated animate__fadeIn">
-                                                    <p class="text-gray-500 text-base">Transaction</p>
-                                                    <div class="my-4">
-                                                        <h3
-                                                            class="text-3xl font-semibold text-black dark:text-gray-200">
-                                                            200</h3>
+                                            <!-- Receive Money tab content -->
+                                            <div class="tab-item">
+                                                <div class="tab-heading">
+                                                    <div class="my-6">
+                                                        <h3 class="text-3xl font-semibold text-black dark:text-gray-200">Hello,
+                                                            Receive money here</h3>
+                                                        <p class="text-gray-500 text-base">Receive money from another VER wallet</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+        
+                                                <!-- Tab Content -->
+                                                <div class="account-info-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
+                                                    <div class="account-info-container">
+                                                        <div class="account-info-content text-center">
+                                                            <div>
+                                                                <img class="block w-16 h-16 mx-auto" src="media/tocken-lg.png" alt="">
+                                                                <h3 class="text-2xl font-semibold text-black dark:text-gray-200 mt-3">your VER address</h3>
+                                                            </div>
 
-                                        <!-- Chart Area -->
-                                        <div class="chart-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
-                                            <div class="chart-container">
-                                                <canvas id="myChart" class="w-full"></canvas>
+                                                            <!-- Verrier Token -->
+                                                            <div class="ver-key bg-thin-gray dark:bg-white mt-4 rounded-lg">
+                                                                <div class="relative rounded-lg px-6 py-2.5">
+                                                                    <div class="token-key text-center w-11/12">
+                                                                        <input type="text" id="ver-token" value="0x60a0eb93104d5ad48b2e5b47172109e86f4a5b9c" class="text-green-400 dark:text-black" readonly />
+                                                                    </div>
+                                                                    <div class="token-copy-area w-1/12 absolute top-0 right-0">
+                                                                        <img id="ver-token-btn1" class="w-6 h-6 cursor-pointer ml-auto" src="media/copy-icon.svg" alt="copy token" title="Click to copy">
+                                                                        <img id="ver-token-btn2" class="w-6 h-6 cursor-pointer ml-auto" src="media/tick.png" alt="copy token" title="Copied">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- QR Code -->
+                                                            <div class="qr-code my-12">
+                                                                <div class="qr-container">
+                                                                    <img class="w-40 bg-white block mx-auto" src="media/qrcode.png" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Mail and Chain -->
+                                                            <div class="mail-chain">
+                                                                <div class="mail-chain-container">
+                                                                    <div class="flex flex-col md:flex-row justify-center md:justify-around items-center">
+                                                                        <div class="mail md:mb-0 mb-4">
+                                                                            <a href="#" class="flex items-center text-sm md:text-base font-semibold">
+                                                                                <div class="w-10 h-10 p-3 rounded-full mr-2 md:mr-6 bg-light-green dark:bg-site-blue">
+                                                                                    <img class="w-full" src="media/mail-green.svg" alt="">
+                                                                                </div>
+                                                                                <span>Email this address</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="chain">
+                                                                            <a href="#" class="flex items-center text-sm md:text-base font-semibold">
+                                                                                <div class="w-10 h-10 p-3 rounded-full mr-2 md:mr-6 bg-light-green dark:bg-site-blue">
+                                                                                    <img class="w-full" src="media/chain.svg" alt="">
+                                                                                </div>
+                                                                                <span>View on Blockchain</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>  
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -449,6 +558,10 @@
     <!-- Chart script -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./inc/js/chart.script.js"></script>
+    <!-- Tab Script -->
+    <script src="./inc/js/wallet.tab.js"></script>
+    <!-- copy to clipboard -->
+    <script src="./inc/js/copyToClipboard.js"></script>
 </body>
 
 </html>
