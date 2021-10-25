@@ -238,6 +238,30 @@ div.logo {
     color: #0998A3;
 }
 
+.satus-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #29E088;
+    margin-left: 12px;
+}
+
+#ver-token-select {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#ver-token-select:focus {
+    border: none;
+    outline: none;
+}
+
+#send-money-copy-done,
+#send-money-paste-done {
+    display: none;
+}
+
 /* Deposite History */
 
 .table-scroll {

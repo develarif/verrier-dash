@@ -34,8 +34,8 @@
                         </div>
                         <nav class="menu-items animate__animated animate__fadeIn">
                             <ul class="list-none">
-                                <li>
-                                    <a class="flex align-middle active" href="index.html">
+                                <li class="active">
+                                    <a class="flex align-middle" href="index.html">
                                         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M1.11111 11.1111H7.77778C8.38889 11.1111 8.88889 10.6111 8.88889 10V1.11111C8.88889 0.5 8.38889 0 7.77778 0H1.11111C0.5 0 0 0.5 0 1.11111V10C0 10.6111 0.5 11.1111 1.11111 11.1111ZM1.11111 20H7.77778C8.38889 20 8.88889 19.5 8.88889 18.8889V14.4444C8.88889 13.8333 8.38889 13.3333 7.77778 13.3333H1.11111C0.5 13.3333 0 13.8333 0 14.4444V18.8889C0 19.5 0.5 20 1.11111 20ZM12.2222 20H18.8889C19.5 20 20 19.5 20 18.8889V10C20 9.38889 19.5 8.88889 18.8889 8.88889H12.2222C11.6111 8.88889 11.1111 9.38889 11.1111 10V18.8889C11.1111 19.5 11.6111 20 12.2222 20ZM11.1111 1.11111V5.55556C11.1111 6.16667 11.6111 6.66667 12.2222 6.66667H18.8889C19.5 6.66667 20 6.16667 20 5.55556V1.11111C20 0.5 19.5 0 18.8889 0H12.2222C11.6111 0 11.1111 0.5 11.1111 1.11111Z"
@@ -311,15 +311,33 @@
         
                                                 <!-- Tab Content -->
                                                 <div class="tab-content">
-                                                    <!-- Balance Info -->
+                                                    <!-- Send Money Info -->
                                                     <div
                                                         class="bg-white dark:bg-dark-black text-black dark:text-gray-200 p-8 rounded-2xl">
-                                                        <div class="info-right-bar-content animate__animated animate__fadeIn">
-                                                            <p class="text-gray-500 text-base">Balance</p>
-                                                            <div class="my-4">
-                                                                <h3
-                                                                    class="text-3xl font-semibold text-black dark:text-gray-200">
-                                                                    200,00 <span>Ver</span></h3>
+                                                        <div class="send-money-content animate__animated animate__fadeIn">
+                                                            <div class="top flex justify-between items-center border-b-2 border-gray-200 dark:border-gray-400 pb-4">
+                                                                <div class="top-left flex items-center">
+                                                                    <img class="w-8 h-8 mr-3" src="media/v-token.png" alt="">
+                                                                    <h3 class="text-lg md:text-2xl font-semibold text-black dark:text-gray-200">VER</h3>
+                                                                </div>
+                                                                <div class="top-right flex items-center">
+                                                                    <h3 class="text-lg md:text-2xl font-semibold text-black dark:text-gray-200">Live Data</h3>
+                                                                    <div class="satus-icon"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bottom grid grid-cols-1 lg:grid-cols-3 gap-8 pt-8">
+                                                                <div class="left">
+                                                                    <p class="text-gray-400 text-base font-normal">Ver USD</p>
+                                                                    <h3 class="text-lg lg:text-2xl font-semibold text-black dark:text-gray-200 mt-2">0.28541</h3>
+                                                                </div>
+                                                                <div class="middle">
+                                                                    <p class="text-gray-400 text-base font-normal">Ver BTC</p>
+                                                                    <h3 class="text-lg lg:text-2xl font-semibold text-black dark:text-gray-200 mt-2">0.00000254765</h3>
+                                                                </div>
+                                                                <div class="right">
+                                                                    <p class="text-gray-400 text-base font-normal">Market Cap</p>
+                                                                    <h3 class="text-lg lg:text-2xl font-semibold text-black dark:text-gray-200 mt-2">$5,3541M</h3>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -327,8 +345,63 @@
         
                                                 <!-- Recipent address -->
                                                 <div class="recipent-area w-full bg-white dark:bg-dark-black p-6 mt-8 rounded-2xl">
-                                                    <div class="recipent-container">
-                                                        hi
+                                                    <div class="recipent-container animate__animated animate__fadeIn">
+                                                        
+                                                        <div class="send-money-form">
+                                                            <!-- Fund transfer form -->
+                                                            <form>
+                                                                <div class="first-input">
+                                                                    <label for="fisrt-input" class="text-lg font-medium text-black dark:text-gray-200">Recipent address</label>
+                                                                    <div class="input flex flex-col lg:flex-row mt-2">
+                                                                        <div class="w-full lg:w-10/12">
+                                                                            <input type="text" id="fisrt-input" placeholder="Enter VER wallet address" class="border border-transparent focus:outline-none bg-thin-gray w-full px-3 h-10 rounded-lg text-gray-700 font-normal text-base" />
+                                                                        </div>
+                                                                        <div class="first-line-btn flex w-full lg:w-2/12 mt-4 lg:mt-0">
+                                                                            <div class="copy-btn02 mr-4 lg:mr-0 lg:w-1/2">
+                                                                                <img id="send-money-copy" class="w-10 h-10 mr-auto lg:ml-auto bg-thin-gray rounded-lg p-2 cursor-pointer" src="media/copy-icon.svg" alt="">
+                                                                            </div>
+                                                                            <div class="copy-btn02  wlg:-1/2">
+                                                                                <img id="send-money-paste" class="w-10 h-10 mr-auto lg:ml-auto bg-thin-gray rounded-lg p-2 cursor-pointer" src="media/plus.svg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text-gray-400 mt-2 text-sm font-normal">Please only enter VER address. Funds will be lost otherwise</p>
+                                                                </div>
+
+                                                                <div class="second-input mt-5">
+                                                                    <label for="second-input" class="text-lg font-medium text-black dark:text-gray-200">Label</label>
+                                                                    <div class="input mt-2">
+                                                                        <input type="text" id="second-input" placeholder="Enter a label for this address to add it in your addressbook" class="border border-transparent focus:outline-none bg-thin-gray w-full px-3 h-10 rounded-lg text-gray-700 font-normal text-base" />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="third-input mt-5">
+                                                                    <label for="third-input" class="text-lg font-medium text-black dark:text-gray-200">Amount</label>
+                                                                    <div class="input flex flex-col md:flex-row mt-2">
+                                                                        <div class="w-full md:w-1/2">
+                                                                            <div class="bg-thin-gray flex justify-between rounded-lg pr-2">
+                                                                                <input type="text" id="third-input" placeholder="Enter amount" class="border border-transparent focus:outline-none bg-thin-gray w-full px-3 h-10 rounded-lg text-gray-700 font-normal text-base" />
+                                                                                <select name="" id="ver-token-select" class="text-gray-700">
+                                                                                    <option value="">Ver</option>
+                                                                                    <option value="">BTC</option>
+                                                                                    <option value="">USD</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="flex flex-wrap w-full md:w-1/2 ml-0 md:ml-16 mt-8 md:mt-0">
+                                                                            <div class="w-1/2">
+                                                                                <p class="text-gray-400 text-base font-normal">Balance</p>
+                                                                                <h3 class="text-lg font-semibold text-black dark:text-gray-200 mt-1">0.0324</h3>
+                                                                            </div>
+                                                                            <div class="w-1/2">
+                                                                                <p class="text-gray-400 text-base font-normal">Balance in BTC</p>
+                                                                                <h3 class="text-lg font-semibold text-black dark:text-gray-200 mt-1">0.00000254765</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
